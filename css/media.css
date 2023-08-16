@@ -2,6 +2,13 @@
   .container {
     max-width: 428px;
   }
+  .mob-scial-merezha {
+    gap: 63px;
+    justify-content: center;
+  }
+  .checkbox-div {
+    margin-bottom: 24px;
+  }
 }
 /*--------------------------------------------768-------------------------------------*/
 @media screen and (min-width: 768px) {
@@ -69,12 +76,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 64px 24px;
-    margin-bottom: 96px;
   }
-  .custome {
-    padding-top: 0;
-  }
-
   .customer-list {
     width: 552px;
     margin: 0% auto;
@@ -91,7 +93,7 @@
     flex-wrap: wrap;
   }
   .foote-media {
-    margin: 96px 0 0 24px;
+    margin: 0 0 0 24px;
   }
   .foote-media-desc {
     justify-content: start;
@@ -157,6 +159,10 @@
   }
   .main-section {
     padding-top: 64px;
+  }
+  .modal {
+    width: 408px;
+    min-height: 584px;
   }
 }
 /*-------------------------------------------1158----------------------------------*/
@@ -243,16 +249,15 @@
     flex-wrap: nowrap;
   }
   .foote-logo-div {
-    margin-top: 100px;
     margin-left: 0;
-    margin-right: 120px;
     padding: 0%;
+    margin-bottom: 0;
   }
   .foote-media {
-    margin: 100px 0 0 0;
+    margin: 0 0 0 120px;
   }
   .subsc-div {
-    margin: 100px 0 0 80px;
+    margin-left: 80px;
   }
   .adres-item {
     display: flex;

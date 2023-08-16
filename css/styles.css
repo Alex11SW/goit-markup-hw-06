@@ -74,7 +74,7 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--iris, #4d5ae5);
-  margin-right: 76px;
+  margin-right: 120px;
 }
 .logo-web {
   justify-content: center;
@@ -243,16 +243,19 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-.mob-scial-merezha {
-  display: flex;
-  justify-content: center;
-  gap: 56px;
-  margin-bottom: 40px;
-}
 .mob-scial-merezha-item {
   width: 40px;
   height: 40px;
 }
+.mob-scial-merezha {
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
 .mob-scial-merezha-link {
   width: 100%;
   height: 100%;
@@ -275,8 +278,6 @@ img {
 .hero {
   background: var(--navyblue, #2e2f42);
   padding: 112px 0;
-  /*width: 100%;
-  max-width: 1440px;*/
   margin: 0 auto;
   width: 100%;
   max-width: 428px;
@@ -453,7 +454,7 @@ img {
   justify-content: center;
   align-items: center;
   padding-bottom: 96px;
-  gap: 24px;
+  gap: 74px;
 }
 .team-item {
   display: flex;
@@ -626,14 +627,10 @@ img {
 
 /*----------------------------------------footer---------------------------------*/
 .foote {
-  display: block;
-  flex-direction: column;
-  justify-content: center;
-  height: 664px;
+  padding: 100px 0;
   background-color: var(--navyblue, #2e2f42);
 }
 .foote-logo-div {
-  padding-top: 96px;
   margin-bottom: 72px;
 }
 .foote-logo {
@@ -818,14 +815,19 @@ img {
   pointer-events: none;
 }
 .modal {
+  width: 95%;
+  max-width: 392px;
+  height: 95%;
+  max-height: 584px;
+  overflow: scroll;
+
   display: block;
   padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  min-height: 584px;
+
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -939,9 +941,8 @@ img {
 }
 
 .checkbox-div {
-  width: 360px;
   height: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .label-checked-name {
@@ -1060,7 +1061,6 @@ img {
   align-items: flex-start;
   gap: 48px;
 }
-
 .photo-container {
   width: 396px;
   flex-direction: column;
