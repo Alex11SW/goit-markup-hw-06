@@ -164,6 +164,11 @@
     width: 408px;
     min-height: 584px;
   }
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    overflow: hidden;
+  }
 }
 /*-------------------------------------------1158----------------------------------*/
 @media screen and (min-width: 1158px) {
@@ -285,5 +290,10 @@
   .photo-list {
     width: 1128px;
     gap: 48px 24px;
+  }
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    overflow: hidden;
   }
 }
