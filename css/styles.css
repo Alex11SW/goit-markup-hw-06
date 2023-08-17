@@ -222,9 +222,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.mob-menu-span {
-  color: #404bbf;
-}
+
 .mob-adres-item {
   margin: 0 0 48px 40px;
 }
@@ -269,10 +267,21 @@ img {
 .mob-social-icon {
   fill: #f4f4fd;
 }
-.mob-menu-spanee {
+
+.activ-iteme::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  background-color: #404bbf;
+  color: #404bbf;
+  border-radius: 2px;
+}
+.activ-iteme {
+  position: relative;
   color: #404bbf;
 }
-
 /*-----------------------------------main-----------------------------------*/
 /*------------------------------section-1--------------------------------*/
 .hero {
@@ -342,11 +351,13 @@ img {
 .list {
   list-style: none;
 }
-.feature-ul {
-  flex-wrap: wrap;
-  justify-content: space-between;
+.feature {
   padding: 96px 0;
-  gap: 0 72px;
+}
+.feature-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
 }
 .visually-hidden {
   position: absolute;
@@ -359,9 +370,6 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.feature-ul > li:not(:last-child) {
-  margin-bottom: 72px;
 }
 
 .feature-icon {
@@ -435,6 +443,7 @@ img {
 .team {
   justify-content: center;
   background-color: #f4f4fd;
+  padding: 96px 0;
 }
 .team-text {
   color: var(--navyblue, #2e2f42);
@@ -446,14 +455,12 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
-  padding-top: 96px;
 }
 .team-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 96px;
   gap: 74px;
 }
 .team-item {
@@ -1008,7 +1015,6 @@ img {
 /*------------------------------------------------section-1-----------------------------------------*/
 .main-section {
   padding-top: 48px;
-
   padding-bottom: 48px;
 }
 
@@ -1059,10 +1065,10 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 48px;
+  gap: 48px 0;
 }
 .photo-container {
-  width: 396px;
+  max-width: 396px;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;

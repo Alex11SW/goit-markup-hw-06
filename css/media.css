@@ -46,8 +46,12 @@
     letter-spacing: 0.02em;
     margin-bottom: 36px;
   }
-  .feature {
-    margin-top: 0;
+
+  .feature-ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
   }
   .feature-lowtext {
     font-weight: 500;
@@ -65,12 +69,7 @@
     display: inline-block;
     width: calc((100% - 1 * 24px) / 2);
   }
-  .rent {
-    padding-bottom: 72px;
-  }
-  .team-text {
-    padding-top: 96px;
-  }
+
   .team-list {
     display: flex;
     flex-direction: row;
@@ -85,12 +84,12 @@
     height: 456px;
   }
   .foote-logo-div {
-    margin-left: 92px;
   }
   .foote-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 550px;
   }
   .foote-media {
     margin: 0 0 0 24px;
@@ -102,7 +101,6 @@
     justify-content: start;
   }
   .subsc-div {
-    margin-left: 92px;
   }
   .subsc-desc {
     justify-content: start;
@@ -195,17 +193,21 @@
         url(../images/people-office-2x.jpg);
     }
   }
+  .logo {
+    margin-right: 76px;
+  }
   .hero-text {
     margin-top: 68px;
     margin-bottom: 48px;
   }
   .feature {
-    margin: 120px 0%;
+    padding: 120px 0%;
   }
   .feature-ul {
     display: flex;
+    flex-wrap: nowrap;
     padding: 0%;
-    gap: 0 0;
+    gap: 0 24px;
   }
   .rent {
     padding-bottom: 0%;
@@ -232,10 +234,13 @@
   .doin-ite {
     display: flex;
   }
+  .team {
+    padding: 120px 0;
+  }
   .team-list {
     flex-wrap: nowrap;
     justify-content: space-between;
-    padding-bottom: 120px;
+
     margin-bottom: 0;
   }
   .custome {
